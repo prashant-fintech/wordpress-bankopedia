@@ -85,6 +85,26 @@
             }
         });
         
+        // Toggle between monthly and yearly view
+        $(document).on('click', '.fc-view-btn', function() {
+            const view = $(this).data('view');
+            $('.fc-view-btn').removeClass('active');
+            $(this).addClass('active');
+            
+            // Re-generate schedule with new view
+            const loanAmount = parseFloat($('#fc-loan-amount').val());
+            const interestRate = parseFloat($('#fc-interest-rate').val());
+            const tenureUnit = $('.fc-tenure-btn.active').data('unit');
+            let tenure = parseInt($('#fc-loan-tenure').val());
+            const tenureInMonths = tenureUnit === 'years' ? tenure * 12 : tenure;
+            const monthlyRate = interestRate / 12 / 100;
+            const emi = (loanAmount * monthlyRate * Math.pow(1 + monthlyRate, tenureInMonths)) / 
+                        (Math.pow(1 + monthlyRate, tenureInMonths) - 1);
+            const currency = $('#fc-loan-amount').data('currency');
+            
+            generateAmortizationSchedule(loanAmount, interestRate, tenureInMonths, emi, currency, tenureUnit, view);
+        });
+        
         // Auto-calculate on page load
         calculateLoan();
     }
@@ -126,7 +146,7 @@
         renderPaymentTimelineChart(loanAmount, interestRate, tenureInMonths, emi, currency);
         
         // Generate amortization schedule
-        generateAmortizationSchedule(loanAmount, interestRate, tenureInMonths, emi, currency, tenureUnit);
+        generateAmortizationSchedule(loanAmount, interestRate, tenureInMonths, emi, currency, tenureUnit, 'yearly');
     }
     
     /**
@@ -281,42 +301,68 @@
     /**
      * Generate Amortization Schedule
      */
-    function generateAmortizationSchedule(principal, interestRate, tenureMonths, emi, currency, tenureUnit) {
+    function generateAmortizationSchedule(principal, interestRate, tenureMonths, emi, currency, tenureUnit, view = 'yearly') {
         const monthlyRate = interestRate / 12 / 100;
         let balance = principal;
         const tbody = $('#fc-amortization-body');
         tbody.empty();
         
-        const years = Math.ceil(tenureMonths / 12);
+        // Update header based on view
+        $('#fc-period-header').text(view === 'monthly' ? 'Month' : 'Year');
         
-        for (let year = 1; year <= years; year++) {
-            const openingBalance = balance;
-            const monthsInYear = year === years ? (tenureMonths % 12 || 12) : 12;
-            let yearPrincipal = 0;
-            let yearInterest = 0;
-            let totalEmi = 0;
-            
-            for (let month = 1; month <= monthsInYear; month++) {
+        if (view === 'monthly') {
+            // Generate month-wise schedule
+            for (let month = 1; month <= tenureMonths; month++) {
+                const openingBalance = balance;
                 const interest = balance * monthlyRate;
                 const principalPaid = emi - interest;
-                
-                yearPrincipal += principalPaid;
-                yearInterest += interest;
-                totalEmi += emi;
                 balance -= principalPaid;
+                
+                const row = `
+                    <tr>
+                        <td>${month}</td>
+                        <td>${currency} ${formatCurrency(Math.round(openingBalance))}</td>
+                        <td>${currency} ${formatCurrency(Math.round(emi))}</td>
+                        <td>${currency} ${formatCurrency(Math.round(principalPaid))}</td>
+                        <td>${currency} ${formatCurrency(Math.round(interest))}</td>
+                        <td>${currency} ${formatCurrency(Math.max(0, Math.round(balance)))}</td>
+                    </tr>
+                `;
+                tbody.append(row);
             }
+        } else {
+            // Generate year-wise schedule
+            const years = Math.ceil(tenureMonths / 12);
             
-            const row = `
-                <tr>
-                    <td>${year}</td>
-                    <td>${currency} ${formatCurrency(Math.round(openingBalance))}</td>
-                    <td>${currency} ${formatCurrency(Math.round(totalEmi))}</td>
-                    <td>${currency} ${formatCurrency(Math.round(yearPrincipal))}</td>
-                    <td>${currency} ${formatCurrency(Math.round(yearInterest))}</td>
-                    <td>${currency} ${formatCurrency(Math.max(0, Math.round(balance)))}</td>
-                </tr>
-            `;
-            tbody.append(row);
+            for (let year = 1; year <= years; year++) {
+                const openingBalance = balance;
+                const monthsInYear = year === years ? (tenureMonths % 12 || 12) : 12;
+                let yearPrincipal = 0;
+                let yearInterest = 0;
+                let totalEmi = 0;
+                
+                for (let month = 1; month <= monthsInYear; month++) {
+                    const interest = balance * monthlyRate;
+                    const principalPaid = emi - interest;
+                    
+                    yearPrincipal += principalPaid;
+                    yearInterest += interest;
+                    totalEmi += emi;
+                    balance -= principalPaid;
+                }
+                
+                const row = `
+                    <tr>
+                        <td>${year}</td>
+                        <td>${currency} ${formatCurrency(Math.round(openingBalance))}</td>
+                        <td>${currency} ${formatCurrency(Math.round(totalEmi))}</td>
+                        <td>${currency} ${formatCurrency(Math.round(yearPrincipal))}</td>
+                        <td>${currency} ${formatCurrency(Math.round(yearInterest))}</td>
+                        <td>${currency} ${formatCurrency(Math.max(0, Math.round(balance)))}</td>
+                    </tr>
+                `;
+                tbody.append(row);
+            }
         }
     }
     

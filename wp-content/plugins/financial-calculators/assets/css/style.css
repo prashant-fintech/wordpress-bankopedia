@@ -298,6 +298,37 @@
     margin-top: 20px;
 }
 
+.fc-schedule-view-toggle {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.fc-view-btn {
+    padding: 10px 30px;
+    border: 2px solid #e0e0e0;
+    background: #fff;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 120px;
+}
+
+.fc-view-btn:hover {
+    border-color: #667eea;
+    color: #667eea;
+}
+
+.fc-view-btn.active {
+    background: #667eea;
+    border-color: #667eea;
+    color: white;
+}
+
 .fc-amortization-table {
     width: 100%;
     border-collapse: collapse;
@@ -370,6 +401,14 @@
     .fc-amortization-table th,
     .fc-amortization-table td {
         padding: 10px 8px;
+    }
+    
+    .fc-schedule-view-toggle {
+        flex-direction: column;
+    }
+    
+    .fc-view-btn {
+        width: 100%;
     }
 }
 

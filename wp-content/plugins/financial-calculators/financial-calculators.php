@@ -215,10 +215,14 @@ class Financial_Calculators {
                                 </button>
                             </h3>
                             <div class="fc-amortization-table-wrapper" id="fc-amortization-table" style="display: none;">
+                                <div class="fc-schedule-view-toggle">
+                                    <button type="button" class="fc-view-btn active" data-view="yearly">Yearly</button>
+                                    <button type="button" class="fc-view-btn" data-view="monthly">Monthly</button>
+                                </div>
                                 <table class="fc-amortization-table">
                                     <thead>
                                         <tr>
-                                            <th>Year</th>
+                                            <th id="fc-period-header">Year</th>
                                             <th>Opening Balance</th>
                                             <th>EMI Paid</th>
                                             <th>Principal Paid</th>
