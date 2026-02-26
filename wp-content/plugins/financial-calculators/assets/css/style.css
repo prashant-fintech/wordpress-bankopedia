@@ -1,0 +1,385 @@
+/**
+ * Financial Calculators Styles
+ */
+
+/* Calculator Container */
+.fc-calculator-wrapper {
+    margin: 20px 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.fc-calculator-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+}
+
+.fc-calculator-title {
+    margin: 0;
+    padding: 25px 30px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a1a;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+}
+
+.fc-calculator-content {
+    padding: 30px;
+}
+
+/* Input Section */
+.fc-input-section {
+    margin-bottom: 30px;
+}
+
+.fc-form-group {
+    margin-bottom: 30px;
+}
+
+.fc-form-group label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.fc-label-text {
+    color: #333;
+}
+
+.fc-label-value {
+    color: #667eea;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* Slider Styles */
+.fc-slider {
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: #e0e0e0;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.fc-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #667eea;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.fc-slider::-webkit-slider-thumb:hover {
+    background: #5568d3;
+    transform: scale(1.1);
+}
+
+.fc-slider::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #667eea;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.fc-slider::-moz-range-thumb:hover {
+    background: #5568d3;
+    transform: scale(1.1);
+}
+
+.fc-range-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    font-size: 13px;
+    color: #666;
+}
+
+/* Tenure Toggle */
+.fc-tenure-toggle {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.fc-tenure-btn {
+    flex: 1;
+    padding: 10px 20px;
+    border: 2px solid #e0e0e0;
+    background: #fff;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.fc-tenure-btn:hover {
+    border-color: #667eea;
+    color: #667eea;
+}
+
+.fc-tenure-btn.active {
+    background: #667eea;
+    border-color: #667eea;
+    color: white;
+}
+
+/* Calculate Button */
+.fc-calculate-btn {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.fc-calculate-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.fc-calculate-btn:active {
+    transform: translateY(0);
+}
+
+/* Results Section */
+.fc-results-section {
+    margin-top: 40px;
+}
+
+.fc-result-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.fc-result-card {
+    padding: 25px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.fc-result-card:hover {
+    border-color: #667eea;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.fc-result-card.fc-card-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.fc-result-card.fc-card-primary .fc-result-label,
+.fc-result-card.fc-card-primary .fc-result-value {
+    color: white;
+}
+
+.fc-result-label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.fc-result-value {
+    font-size: 26px;
+    font-weight: 700;
+    color: #333;
+}
+
+.fc-total-highlight {
+    color: #667eea;
+}
+
+/* Charts Section */
+.fc-charts-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.fc-chart-container {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 25px;
+    border: 2px solid #e0e0e0;
+}
+
+.fc-chart-title {
+    margin: 0 0 20px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+}
+
+.fc-chart-wrapper {
+    position: relative;
+    height: 300px;
+}
+
+.fc-chart-wrapper canvas {
+    max-height: 100%;
+}
+
+/* Amortization Section */
+.fc-amortization-section {
+    margin-top: 40px;
+}
+
+.fc-section-title {
+    margin: 0 0 20px 0;
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fc-toggle-schedule {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.fc-toggle-schedule:hover {
+    background: #5568d3;
+}
+
+.fc-toggle-icon {
+    transition: transform 0.3s ease;
+}
+
+.fc-amortization-table-wrapper {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.fc-amortization-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fc-amortization-table thead {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.fc-amortization-table th {
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.fc-amortization-table td {
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 14px;
+    color: #333;
+}
+
+.fc-amortization-table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+.fc-amortization-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .fc-calculator-content {
+        padding: 20px;
+    }
+    
+    .fc-calculator-title {
+        font-size: 22px;
+        padding: 20px;
+    }
+    
+    .fc-result-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .fc-charts-section {
+        grid-template-columns: 1fr;
+    }
+    
+    .fc-chart-wrapper {
+        height: 250px;
+    }
+    
+    .fc-section-title {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .fc-amortization-table {
+        font-size: 12px;
+    }
+    
+    .fc-amortization-table th,
+    .fc-amortization-table td {
+        padding: 10px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fc-result-value {
+        font-size: 22px;
+    }
+    
+    .fc-calculate-btn {
+        font-size: 16px;
+        padding: 14px;
+    }
+}

@@ -1,0 +1,640 @@
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-05-08 11:02:57+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: hi_IN\n"
+"Project-Id-Version: MailPoet - MailPoet Premium\n"
+
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:387
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:388
+msgid "Your cart is waiting, and so is your 20% off!"
+msgstr "आपका कार्ट इंतज़ार कर रहा है, और आपको 20% की छूट भी!"
+
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:355
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:356
+msgid "Your cart is waiting"
+msgstr "आपका कार्ट इंतज़ार कर रहा है"
+
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:328
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:329
+msgid "It looks like you left something behind…"
+msgstr "ऐसा लगता है जैसे आपने कुछ पीछे छोड़ दिया है..."
+
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:316
+msgid "Encourage your potential customers to finalize their purchase when they have added items to their cart but haven’t finished the order yet. Offer a coupon code as a last resort to convert them to customers."
+msgstr "अपने संभावित ग्राहकों को अपनी खरीदारी को अंतिम रूप देने के लिए प्रोत्साहित करें जब उन्होंने अपने कार्ट में आइटम जोड़ दिए हों लेकिन अभी तक ऑर्डर पूरा नहीं किया हो। उन्हें ग्राहकों में परिवर्तित करने के लिए अंतिम उपाय के रूप में एक कूपन कोड प्रदान करें।"
+
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:315
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:322
+msgid "Abandoned cart campaign"
+msgstr "परित्यक्त कार्ट अभियान"
+
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:293
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:294
+msgid "We’ve missed you"
+msgstr "हमें आपकी बहुत याद आई"
+
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:266
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:267
+msgid "It’s been a while…"
+msgstr "इसे बीते एक अर्सा हो गया है…"
+
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:234
+msgid "Rekindle the relationship with past customers by reminding them of their favorite products and showcasing what’s new, encouraging a return to your brand."
+msgstr "पुराने ग्राहकों को उनके पसंदीदा उत्पादों की याद दिलाकर और जो नया है उसे प्रदर्शित करके, अपने ब्रांड में वापसी को प्रोत्साहित करके उनके साथ संबंधों को फिर से जागृत करें।"
+
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:233
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:240
+msgid "Win-back customers"
+msgstr "विन-बैक ग्राहक"
+
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:218
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:219
+msgid "Thank you for your loyalty"
+msgstr "आपकी वफ़ादारी के लिए धन्यवाद"
+
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:187
+msgid "These are your most important customers. Make them feel special by sending a thank you note for supporting your brand."
+msgstr "ये आपके सबसे महत्वपूर्ण ग्राहक हैं। अपने ब्रांड का समर्थन करने के लिए धन्यवाद नोट भेजकर उन्हें विशेष महसूस कराएं।"
+
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:186
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:193
+msgid "Thank loyal customers"
+msgstr "वफादार ग्राहकों का धन्यवाद"
+
+#. translators: automation trigger title
+#: lib/Automation/Integrations/WooCommerceSubscriptions/Triggers/SubscriptionTrialStartedTrigger.php:37
+msgid "Woo Subscription trial started"
+msgstr "वू सदस्यता परीक्षण शुरू हुआ"
+
+#. translators: automation trigger title
+#: lib/Automation/Integrations/WooCommerceSubscriptions/Triggers/SubscriptionTrialEndedTrigger.php:43
+msgid "Woo Subscription trial ended"
+msgstr "वू सदस्यता परीक्षण समाप्त हो गया"
+
+#. translators: automation trigger title
+#: lib/Automation/Integrations/WooCommerceSubscriptions/Triggers/SubscriptionRenewedTrigger.php:37
+msgid "Woo Subscription renewed"
+msgstr "वू सदस्यता नवीनीकृत"
+
+#. translators: automation trigger title
+#: lib/Automation/Integrations/WooCommerceSubscriptions/Triggers/SubscriptionPaymentFailedTrigger.php:36
+msgid "Woo Subscription payment failed"
+msgstr "वू सदस्यता भुगतान विफल रहा"
+
+#. translators: automation trigger title
+#: lib/Automation/Integrations/WooCommerceSubscriptions/Triggers/SubscriptionExpiredTrigger.php:36
+msgid "Woo Subscription expired"
+msgstr "वू सदस्यता समाप्त हो गई"
+
+#. translators: automation trigger title
+#: lib/Automation/Integrations/WooCommerceSubscriptions/Triggers/SubscriptionStatusChangedTrigger.php:38
+msgid "Woo Subscription status changed"
+msgstr "वू सदस्यता स्थिति बदल गई"
+
+#. translators: automation trigger title
+#: lib/Automation/Integrations/WooCommerceSubscriptions/Triggers/SubscriptionCreatedTrigger.php:42
+msgid "Woo Subscription started"
+msgstr "वू सब्सक्रिप्शन शुरू हो गया"
+
+#. translators: %d is the order ID.
+#: lib/Automation/Integrations/WooCommerceSubscriptions/Subjects/WooCommerceSubscriptionSubject.php:62
+msgid "Subscription with ID '%d' not found."
+msgstr "आईडी '%d' के साथ सदस्यता नहीं मिली।"
+
+#. translators: automation subject (entity entering automation) title
+#: lib/Automation/Integrations/WooCommerceSubscriptions/Subjects/WooCommerceSubscriptionSubject.php:43
+msgid "WooCommerce Subscription"
+msgstr "वूकॉमर्स सदस्यता"
+
+#. translators: automation subject (entity entering automation) title
+#: lib/Automation/Integrations/WooCommerceSubscriptions/Subjects/WooCommerceSubscriptionStatusChangeSubject.php:22
+msgid "WooCommerce Subscription status change"
+msgstr "वूकॉमर्स सदस्यता स्थिति परिवर्तन"
+
+#: lib/Automation/Integrations/WooCommerceSubscriptions/Fields/SubscriptionFields.php:130
+msgid "Woo Subscription is in trial period"
+msgstr "वू सब्सक्रिप्शन परीक्षण अवधि में है"
+
+#: lib/Automation/Integrations/WooCommerceSubscriptions/Fields/SubscriptionFields.php:122
+msgid "Woo Subscription cancel email sent"
+msgstr "वू सदस्यता रद्द ईमेल भेजा गया"
+
+#: lib/Automation/Integrations/WooCommerceSubscriptions/Fields/SubscriptionFields.php:114
+msgid "Woo Subscription requires manual renewal payments"
+msgstr "वू सदस्यता के लिए मैन्युअल नवीनीकरण भुगतान की आवश्यकता होती है"
+
+#: lib/Automation/Integrations/WooCommerceSubscriptions/Fields/SubscriptionFields.php:106
+msgid "Woo Subscription billing interval"
+msgstr "वू सदस्यता बिलिंग अंतराल"
+
+#: lib/Automation/Integrations/WooCommerceSubscriptions/Fields/SubscriptionFields.php:95
+msgid "Woo Subscription billing period"
+msgstr "वू सदस्यता बिलिंग अवधि"
+
+#: lib/Automation/Integrations/WooCommerceSubscriptions/Fields/SubscriptionFields.php:87
+msgid "The total amount charged at the outset of the Subscription"
+msgstr "सदस्यता की शुरुआत में ली गई कुल राशि"
+
+#: lib/Automation/Integrations/WooCommerceSubscriptions/Fields/SubscriptionFields.php:79
+msgid "Woo Subscription number of payments"
+msgstr "वू सदस्यता भुगतान की संख्या"
+
+#: lib/Automation/Integrations/WooCommerceSubscriptions/Fields/SubscriptionFields.php:71
+msgid "Woo Subscription number of failed payments"
+msgstr "विफल भुगतानों की वू सदस्यता संख्या"
+
+#: lib/Automation/Integrations/WooCommerceSubscriptions/Fields/SubscriptionFields.php:60
+msgid "Woo Subscription status"
+msgstr "वू सदस्यता स्थिति"
+
+#: lib/Automation/Integrations/WooCommerceSubscriptions/Fields/SubscriptionFields.php:52
+msgid "Woo Subscription title"
+msgstr "वू सदस्यता शीर्षक"
+
+#: lib/Automation/Integrations/WooCommerceSubscriptions/Fields/SubscriptionFields.php:44
+msgid "Woo Subscription modified date"
+msgstr "वू सदस्यता संशोधित तिथि"
+
+#: lib/Automation/Integrations/WooCommerceSubscriptions/Fields/SubscriptionFields.php:36
+msgid "Woo Subscription created"
+msgstr "वू सदस्यता बनाई गई"
+
+#: lib/Automation/Integrations/WooCommerceSubscriptions/Fields/SubscriptionFields.php:28
+msgid "Woo Subscription ID"
+msgstr "वू सदस्यता आईडी"
+
+#. translators: %d is the ID of the segment
+#: lib/Automation/Integrations/MailPoetPremium/Triggers/ClicksEmailLinkTrigger.php:107
+msgid "Link with ID '%d' not found."
+msgstr "आईडी '%d' वाला लिंक नहीं मिला।"
+
+#: lib/Automation/Integrations/MailPoetPremium/Triggers/ClicksEmailLinkTrigger.php:97
+msgid "Please select an operator."
+msgstr "कृपया एक ऑपरेटर चुनें।"
+
+#. translators: %d is the ID of the segment
+#: lib/Automation/Integrations/MailPoetPremium/Triggers/ClicksEmailLinkTrigger.php:90
+msgid "Newsletter with ID '%d' not found."
+msgstr "आईडी '%d' वाला न्यूज़लेटर नहीं मिला।"
+
+#: lib/Automation/Integrations/MailPoetPremium/Triggers/ClicksEmailLinkTrigger.php:83
+msgid "Please select a newsletter."
+msgstr "कृपया एक न्यूज़लेटर चुनें।"
+
+#. translators: automation trigger title
+#: lib/Automation/Integrations/MailPoetPremium/Triggers/ClicksEmailLinkTrigger.php:59
+msgid "Subscriber clicks a link in email"
+msgstr "सब्सक्राइबर ईमेल में एक लिंक पर क्लिक करता है"
+
+#. translators: %s is the name of the taxonomy
+#: lib/Automation/Integrations/WordPress/Triggers/MadeACommentTrigger.php:137
+msgid "The taxonomy “%s” is not registered."
+msgstr "वर्गीकरण “%s” पंजीकृत नहीं है।"
+
+#. translators: %d is the ID of the post not found.
+#: lib/Automation/Integrations/WordPress/Triggers/MadeACommentTrigger.php:114
+msgid "Post with ID '%d' not found."
+msgstr "आईडी '%d' वाली पोस्ट नहीं मिली।"
+
+#. translators: %s is the name of the post type.
+#: lib/Automation/Integrations/WordPress/Triggers/MadeACommentTrigger.php:91
+msgid "Post Type “%s” is not registered."
+msgstr "पोस्ट प्रकार “%s” पंजीकृत नहीं है।"
+
+#. translators: automation trigger title
+#: lib/Automation/Integrations/WordPress/Triggers/MadeACommentTrigger.php:52
+msgid "User makes a comment"
+msgstr "उपयोगकर्ता एक टिप्पणी करता है"
+
+#: lib/Automation/Integrations/WooCommerce/Triggers/MadeAReviewTrigger.php:73
+msgid "The WooCommerce rating system is not enabled."
+msgstr "वूकॉमर्स रेटिंग सिस्टम सक्षम नहीं है।"
+
+#. translators: automation trigger title
+#: lib/Automation/Integrations/WooCommerce/Triggers/MadeAReviewTrigger.php:48
+msgid "Made a review"
+msgstr "एक समीक्षा की"
+
+#: lib/Automation/Integrations/WooCommerce/Subjects/ReviewSubject.php:50
+msgid "Review rating"
+msgstr "रेटिंग की समीक्षा करें"
+
+#. translators: automation subject (entity entering automation) title
+#: lib/Automation/Integrations/WooCommerce/Subjects/ReviewSubject.php:36
+msgid "Review"
+msgstr "समीक्षा"
+
+#. translators: automation trigger title
+#: lib/Automation/Integrations/MailPoetPremium/Triggers/TagRemovedTrigger.php:43
+msgid "Tag removed"
+msgstr "टैग हटा दिया गया"
+
+#. translators: automation trigger title
+#: lib/Automation/Integrations/MailPoetPremium/Triggers/TagAddedTrigger.php:43
+msgid "Tag added"
+msgstr "टैग जोड़ा गया"
+
+#. translators: automation trigger title
+#: lib/Automation/Integrations/MailPoetPremium/Triggers/CustomTrigger.php:51
+msgid "Custom trigger"
+msgstr "कस्टम ट्रिगर"
+
+#. translators: %d is the ID.
+#: lib/Automation/Integrations/MailPoetPremium/Subjects/TagSubject.php:50
+msgid "Tag with ID '%d' not found."
+msgstr "आईडी '%d' वाला टैग नहीं मिला।"
+
+#. translators: automation subject (entity entering automation) title
+#: lib/Automation/Integrations/MailPoetPremium/Subjects/TagSubject.php:36
+msgid "MailPoet tag"
+msgstr "मेलपोएट टैग"
+
+#. translators: automation subject (entity entering automation) title
+#: lib/Automation/Integrations/MailPoetPremium/Subjects/CustomDataSubject.php:25
+msgid "Custom data"
+msgstr "कस्टम डेटा"
+
+#. translators: automation action title
+#: lib/Automation/Integrations/MailPoetPremium/Actions/CustomAction.php:34
+msgid "Custom action"
+msgstr "कस्टम कार्रवाई"
+
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:175
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:176
+msgid "Important information about your order"
+msgstr "आपके ऑर्डर के बारे में महत्वपूर्ण जानकारी"
+
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:141
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:148
+msgid "Purchased in a category"
+msgstr "एक श्रेणी में खरीदा गया"
+
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:122
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:129
+msgid "Purchased a product with a tag"
+msgstr "टैग के साथ उत्पाद खरीदा"
+
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:104
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:123
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:142
+msgid "Share care instructions or simply thank the customer for making an order."
+msgstr "देखभाल संबंधी निर्देश साझा करें या ऑर्डर देने के लिए ग्राहक को धन्यवाद दें।"
+
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:103
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:110
+msgid "Purchased a product"
+msgstr "एक उत्पाद खरीदा"
+
+#: lib/Automation/Integrations/MailPoetPremium/Analytics/Endpoints/OrderEndpoint.php:39
+#: lib/Automation/Integrations/MailPoetPremium/Analytics/Endpoints/SubscriberEndpoint.php:39
+msgid "Automation not found"
+msgstr "स्वचालन नहीं मिला"
+
+#: lib/Automation/Integrations/MailPoetPremium/Analytics/Storage/SubscriberStatistics.php:206
+msgid "Completed"
+msgstr "पूर्ण हुआ"
+
+#: lib/Automation/Integrations/MailPoetPremium/Analytics/Storage/SubscriberStatistics.php:204
+msgid "Cancelled"
+msgstr "रद्द"
+
+#: lib/Automation/Integrations/MailPoetPremium/Analytics/Storage/SubscriberStatistics.php:202
+msgid "In Progress"
+msgstr "प्रगति में"
+
+#: lib/Automation/Integrations/MailPoetPremium/Analytics/Storage/SubscriberStatistics.php:200
+msgid "Failed"
+msgstr "असफल हुआ"
+
+#: lib/Automation/Integrations/MailPoetPremium/Actions/NotificationEmailAction.php:96
+msgid "MailPoet Automation Notification"
+msgstr "मेलपोएट स्वचालन अधिसूचना"
+
+#. translators: automation action title
+#: lib/Automation/Integrations/MailPoetPremium/Actions/NotificationEmailAction.php:83
+msgid "Send notification email"
+msgstr "सूचना ईमेल भेजें"
+
+#. translators: %s is the actual error message
+#: lib/Automation/Integrations/MailPoetPremium/Actions/NotificationEmailAction.php:70
+msgid "Failed to send notification email: %s"
+msgstr "सूचना ईमेल भेजने में विफल: %s"
+
+#: lib/Automation/Integrations/MailPoetPremium/Actions/UpdateSubscriberAction.php:120
+msgid "Custom field '%1$s' with ID '%2$d' expects type '%3$s' but type '%4$s' was provided."
+msgstr "आईडी '%2$d' के साथ कस्टम फ़ील्ड '%1$s' प्रकार '%3$s' की अपेक्षा करता है लेकिन '%4$s' प्रकार प्रदान किया गया था।"
+
+#. translators: %d is the ID of the custom field
+#: lib/Automation/Integrations/MailPoetPremium/Actions/UpdateSubscriberAction.php:112
+msgid "Custom field with ID '%d' not found."
+msgstr "आईडी '%d' के साथ कस्टम फ़ील्ड नहीं मिला।"
+
+#. translators: automation action title
+#: lib/Automation/Integrations/MailPoetPremium/Actions/UpdateSubscriberAction.php:38
+msgid "Update subscriber"
+msgstr "अपडेट सब्सक्राइबर"
+
+#. translators: automation action title
+#: lib/Automation/Integrations/MailPoetPremium/Actions/RemoveTagAction.php:44
+msgid "Remove tag"
+msgstr "टेग हटाऔ"
+
+#. translators: automation action title
+#: lib/Automation/Integrations/MailPoetPremium/Actions/RemoveFromListAction.php:38
+msgid "Remove from list"
+msgstr "सूची से हटाएं"
+
+#. translators: %d is the ID of the segment
+#: lib/Automation/Integrations/MailPoetPremium/Actions/AddToListAction.php:76
+#: lib/Automation/Integrations/MailPoetPremium/Actions/RemoveFromListAction.php:85
+msgid "Segment with ID '%s' not found."
+msgstr "आईडी '%s' वाला खंड नहीं मिला।"
+
+#. translators: automation action title
+#: lib/Automation/Integrations/MailPoetPremium/Actions/AddToListAction.php:38
+msgid "Add to list"
+msgstr "सूची में शामिल"
+
+#. translators: %d is the ID of the tag, which was not found.
+#: lib/Automation/Integrations/MailPoetPremium/Actions/AddTagAction.php:60
+msgid "Tag %d was not found."
+msgstr "टैग %d नहीं मिला।"
+
+#. translators: automation action title
+#: lib/Automation/Integrations/MailPoetPremium/Actions/AddTagAction.php:46
+msgid "Add tag"
+msgstr "टैग जोड़ो"
+
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:76
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:83
+msgid "Welcome series for new WordPress users"
+msgstr "नए वर्डप्रेस उपयोगकर्ताओं के लिए स्वागत श्रृंखला"
+
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:77
+msgid "Welcome new WordPress users to your site. Send an email immediately after a WordPress user registers. Send a follow-up email two days later with more in-depth information."
+msgstr "आपकी साइट पर नए वर्डप्रेस उपयोगकर्ताओं का स्वागत है। वर्डप्रेस उपयोगकर्ता के पंजीकरण के तुरंत बाद एक ईमेल भेजें। दो दिन बाद अधिक गहन जानकारी के साथ एक अनुवर्ती ईमेल भेजें।"
+
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:61
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:88
+msgid "Follow-up email"
+msgstr "अनुवर्ती ईमेल"
+
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:59
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:86
+msgid "Welcome email"
+msgstr "स्वागत ईमेल"
+
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:49
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:56
+msgid "Welcome series for new subscribers"
+msgstr "नए ग्राहकों के लिए स्वागत श्रृंखला"
+
+#: lib/Automation/Integrations/MailPoetPremium/Templates/PremiumTemplatesFactory.php:50
+msgid "Welcome new subscribers and start building a relationship with them. Send an email immediately after someone subscribes to your list to introduce your brand and a follow-up two days later to keep the conversation going."
+msgstr "नए ग्राहकों का स्वागत करें और उनके साथ संबंध बनाना शुरू करें। आपके ब्रांड को पेश करने के लिए किसी व्यक्ति द्वारा आपकी सूची की सदस्यता लेने के तुरंत बाद एक ईमेल भेजें और बातचीत जारी रखने के लिए दो दिन बाद फॉलो-अप करें।"
+
+#: lib/Config/Hooks.php:68
+msgid "View MailPoet settings"
+msgstr "MailPoet सेटिंग्स देखें"
+
+#. translators: automation action title
+#: lib/Automation/Integrations/MailPoetPremium/Actions/UnsubscribeAction.php:47
+msgid "Unsubscribe"
+msgstr "सदस्यता रद्द"
+
+#: views/segments/dynamic_premium_translations.html:5
+msgctxt "Dynamic segment creation: The user can see logical operator between condition when has more than one"
+msgid "or"
+msgstr "या"
+
+#: views/segments/dynamic_premium_translations.html:4
+msgctxt "Dynamic segment creation: The user can see logical operator between condition when has more than one"
+msgid "and"
+msgstr "और"
+
+#: views/segments/dynamic_premium_translations.html:3
+msgctxt "Dynamic segment creation: The user can select join between condition when he has more than one"
+msgid "<strong>Any</strong> of the following conditions"
+msgstr "निम्न स्थितियों में से <strong>कोई भी</strong>"
+
+#: views/segments/dynamic_premium_translations.html:2
+msgctxt "Dynamic segment creation: The user can select join between condition when he has more than one"
+msgid "<strong>All</strong> of the following conditions"
+msgstr "निम्न शर्तो में से <strong>सभी</strong>"
+
+#: views/newsletters/campaign_stats.html:27
+msgctxt "Subscriber status - subscriber bounced (w.wiki/45Qc) from a newsletter"
+msgid "Bounced"
+msgstr "बाउंस"
+
+#: views/newsletters/campaign_stats.html:19
+msgctxt "A notice, when no bounces (w.wiki/45Qc) exist for an email."
+msgid "No bounces found"
+msgstr "कोई बाउंस नहीं मिला"
+
+#: views/newsletters/campaign_stats.html:24
+msgctxt "Subscriber engagement status - machine opened a newsletter"
+msgid "Machine-opened"
+msgstr "मशीन से खोला गया"
+
+#: lib/Newsletter/Stats/SubscriberEngagement.php:365
+msgctxt "Subscriber engagement filter - shows machine-opens for a given newsletter"
+msgid "Machine-opened"
+msgstr "मशीन से खोला गया"
+
+#: views/subscribers/stats.html:8
+msgctxt "Prefix for order number e.g. Order #123"
+msgid "Order"
+msgstr "आर्डर"
+
+#: views/newsletters/campaign_stats.html:33
+msgctxt "A fallback for an email of a deleted subscriber"
+msgid "Deleted subscriber"
+msgstr "हटाए गए ग्राहक"
+
+#: views/newsletters/campaign_stats.html:29
+msgctxt "Button label on Subscriber engagement page"
+msgid "Create Segment"
+msgstr "सेगमेंट बनाएं"
+
+#: views/newsletters/campaign_stats.html:28
+msgctxt "Subscriber engagement status - subscriber did not open a newsletter"
+msgid "Unopened"
+msgstr "बंद"
+
+#: views/newsletters/campaign_stats.html:26
+msgctxt "Subscriber engagement status - subscriber unsubscribed from a newsletter"
+msgid "Unsubscribed"
+msgstr "सदस्यता छोड़ दी गई"
+
+#: views/newsletters/campaign_stats.html:25
+msgctxt "Subscriber engagement status - subscriber clicked a newsletter link"
+msgid "Clicked"
+msgstr "क्लिक किए गए"
+
+#: views/newsletters/campaign_stats.html:23
+msgctxt "Subscriber engagement status - subscriber opened a newsletter"
+msgid "Opened"
+msgstr "खोला गया"
+
+#: views/newsletters/campaign_stats.html:13
+msgctxt "For example: \"Total net revenue £25.32\""
+msgid "Total net revenue %1s"
+msgstr "कुल शुद्ध आय %1s"
+
+#: views/newsletters/campaign_stats.html:12
+msgctxt "For example: \"5 products sold\""
+msgid "%1s products sold"
+msgstr "% 1s उत्पाद बिके"
+
+#: views/newsletters/campaign_stats.html:7
+msgctxt "For example: \"£451 from 3 orders\""
+msgid "%1s from %2s orders"
+msgstr "%2s ऑर्डर से %1s"
+
+#: lib/Newsletter/Stats/SubscriberEngagement.php:386
+msgctxt "Subscriber engagement filter - filter those who did not open a newsletter"
+msgid "Unopened"
+msgstr "बंद"
+
+#: lib/Newsletter/Stats/SubscriberEngagement.php:379
+msgctxt "Subscriber engagement filter - filter those who performed any action (e.g., clicked, opened, unsubscribed)"
+msgid "All engaged"
+msgstr "सभी लगे हुए हैं"
+
+#: lib/Newsletter/Stats/SubscriberEngagement.php:370
+msgctxt "Subscriber engagement filter - filter those who unsubscribed from a newsletter"
+msgid "Unsubscribed"
+msgstr "सदस्यता छोड़ दी गई"
+
+#: lib/Newsletter/Stats/SubscriberEngagement.php:360
+msgctxt "Subscriber engagement filter - filter those who opened a newsletter"
+msgid "Opened"
+msgstr "खोला गया"
+
+#: lib/Newsletter/Stats/SubscriberEngagement.php:355
+msgctxt "Subscriber engagement filter - filter those who clicked on a newsletter link"
+msgid "Clicked"
+msgstr "क्लिक किए गए"
+
+#: views/subscribers/stats.html:7
+msgid "No stats"
+msgstr "कोई आँकड़े नहीं"
+
+#: views/subscribers/stats.html:6
+msgid "Loading stats"
+msgstr "आंकड़े लोड हो रहे हैं"
+
+#: views/newsletters/campaign_stats.html:32
+msgid "Segment already exists."
+msgstr "खंड पहले से मौजूद है।"
+
+#: views/newsletters/campaign_stats.html:31
+msgid "Segment \"%s\" created. [link]Create and send an email to it.[/link]"
+msgstr "खंड \"%s\" बनाया गया। [link] इसे एक ईमेल बनाएं और भेजें। [/link]"
+
+#: views/newsletters/campaign_stats.html:30
+msgid "Saving..."
+msgstr "सहेजा जा रहा है..."
+
+#: views/newsletters/campaign_stats.html:22
+msgid "Date and time"
+msgstr "दिनांक और समय"
+
+#: views/newsletters/campaign_stats.html:20
+msgid "Subscriber"
+msgstr "अभिदाता"
+
+#: views/newsletters/campaign_stats.html:18
+msgid "No engagement data found"
+msgstr "कोई जुड़ाव डेटा नहीं मिला"
+
+#: views/newsletters/campaign_stats.html:17
+msgid "Loading data..."
+msgstr "डेटा लोड हो रहा है..."
+
+#: views/newsletters/campaign_stats.html:16
+msgid "Unique clicks"
+msgstr "अद्वितीय क्लिक"
+
+#: views/newsletters/campaign_stats.html:15
+msgid "Link"
+msgstr "कड़ी"
+
+#: views/newsletters/campaign_stats.html:14
+msgid "No clicked links found"
+msgstr "कोई क्लिक किया हुआ लिंक नहीं मिला"
+
+#: views/newsletters/campaign_stats.html:11
+msgid "Or, if you haven’t tried out the products widget yet, [link]here’s how to get started[/link]."
+msgstr "या, यदि आपने अभी तक उत्पाद विजेट को आज़माया नहीं है, तो [link] यहां बताया गया है कि कैसे आरंभ करें [/link]।"
+
+#: views/newsletters/campaign_stats.html:10
+msgid "For best practice tips, check out our [link]guide to WooCommerce follow up emails[/link]."
+msgstr "सर्वोत्तम अभ्यास युक्तियों के लिए, वूकॉमर्स अनुवर्ती ईमेल के लिए हमारी [link] मार्गदर्शिका देखें [/link]।"
+
+#: views/newsletters/campaign_stats.html:9
+msgid "Unfortunately, no products were sold as a result of this email!"
+msgstr "दुर्भाग्य से, इस ईमेल के परिणामस्वरूप कोई उत्पाद नहीं बेचा गया!"
+
+#: views/newsletters/campaign_stats.html:8
+msgid "Products Sold"
+msgstr "उत्पाद बिके"
+
+#: views/newsletters/campaign_stats.html:6
+msgid "Revenues generated by customers who made a purchase within two weeks after they clicked on this email. This is the sum of the order totals including shipping and taxes."
+msgstr "इस ईमेल पर क्लिक करने के बाद दो सप्ताह के भीतर खरीदारी करने वाले ग्राहकों से हुई आय. यह शिपिंग और करों सहित कुल ऑर्डर का योग है।"
+
+#: mailpoet_initializer.php:92
+msgid "Your MailPoet Premium plugin is incompatible with the free MailPoet plugin. [link1]Register[/link1] your key or [link2]purchase one now[/link2] to update the Premium to the latest version."
+msgstr "आपका MailPoet प्रीमियम प्लगइन मुफ़्त MailPoet प्लगइन के साथ असंगत है। अपनी कुंजी [link1]पंजीकृत करें[/link1] या [link2]अभी एक खरीदें[/link2] प्रीमियम को नवीनतम संस्करण में अपडेट करने के लिए।"
+
+#: mailpoet_initializer.php:90
+msgid "You have an older version of the Premium plugin. The features have been disabled in order not to break MailPoet. Please update it in the Plugins page now."
+msgstr "आपके पास प्रीमियम प्लगइन का पुराना संस्करण है। MailPoet को भंग न करने के लिए सुविधाओं को अक्षम कर दिया गया है। कृपया इसे अभी प्लगइन्स पेज में अपडेट करें।"
+
+#. translators: %s is the MailPoet version.
+#: mailpoet_initializer.php:76
+msgid "You need to have MailPoet version %s or higher activated before using this version of MailPoet Premium."
+msgstr "MailPoet प्रीमियम के इस संस्करण का उपयोग करने से पहले आपके पास MailPoet संस्करण %s या उच्चतर सक्रिय होना चाहिए।"
+
+#: mailpoet-premium.php:78
+msgid "MailPoet Premium cannot start because it is missing core files. Please reinstall the plugin."
+msgstr "MailPoet प्रीमियम शुरू नहीं हो सकता क्योंकि इसमें कोर फाइलें नहीं हैं। कृपया प्लगइन को फिर से स्थापित करें।"
+
+#: mailpoet-premium.php:51
+msgid "MailPoet Premium requires PHP version 7.4.0 or newer (version 8.1 recommended). Please read our [link]instructions[/link] on how to resolve this issue."
+msgstr "मेलपोएट प्रीमियम के लिए पीएचपी संस्करण 7.4.0 या नया (संस्करण 8.1 अनुशंसित) आवश्यक है। कृपया इस समस्या को हल करने के तरीके के बारे में हमारे [link]निर्देश[/link] पढ़ें।"
+
+#: lib/Newsletter/Stats/SubscriberEngagement.php:323
+msgid "Filter by link clicked"
+msgstr "क्लिक किए गए लिंक द्वारा फ़िल्टर करें"
+
+#. translators: %1$s is the name of the template, %2$s the path to the cache
+#. folder and %3$s the error message.
+#: lib/Config/Renderer.php:109
+msgid "Failed to render template \"%1$s\". Please ensure the template cache folder \"%2$s\" exists and has write permissions. Terminated with error: \"%3$s\""
+msgstr "टेम्पलेट \"%1$s\" प्रस्तुत करने में विफल। कृपया सुनिश्चित करें कि टेम्प्लेट कैश फ़ोल्डर \"%2$s\" मौजूद है और इसमें लिखने की अनुमति है। त्रुटि के साथ समाप्त: \"%3$s\""
+
+#: lib/Config/Hooks.php:45
+msgid "[link1]Register[/link1] your copy of the MailPoet Premium plugin to receive access to automatic upgrades and support. Need a license key? [link2]Purchase one now.[/link2]"
+msgstr "स्वत: उन्नयन और समर्थन तक पहुंच प्राप्त करने के लिए MailPoet प्रीमियम प्लगइन की अपनी प्रति [link1]पंजीकृत[/link1] करें। लाइसेंस कुंजी की आवश्यकता है? [link2]अभी एक खरीदो।[/link2]"
+
+#: lib/API/JSON/v1/SubscriberDetailedStats.php:42
+msgid "Missing subscriber id."
+msgstr "सब्सक्राइबर आईडी मौजूद नहीं है।"
+
+#: lib/API/JSON/v1/Bounces.php:46 lib/API/JSON/v1/Stats.php:84
+#: lib/API/JSON/v1/Stats.php:116
+msgid "This newsletter is not sent yet."
+msgstr "यह न्यूज़लेटर अभी तक नहीं भेजा गया है।"
+
+#: lib/API/JSON/v1/Bounces.php:39 lib/API/JSON/v1/Stats.php:71
+#: lib/API/JSON/v1/Stats.php:109
+msgid "This newsletter does not exist."
+msgstr "यह न्यूज़लेटर मौजूद नहीं है।"

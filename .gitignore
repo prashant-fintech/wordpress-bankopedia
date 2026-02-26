@@ -1,0 +1,59 @@
+# WordPress Core Files
+/wp-admin/
+/wp-includes/
+/wp-*.php
+/xmlrpc.php
+/license.txt
+/readme.html
+
+# Configuration Files (IMPORTANT - Contains sensitive data)
+wp-config.php
+.htaccess
+
+# Backup Files
+*.bak
+*.backup
+*.sql
+*.sql.gz
+/application_backups/
+/wp-content/backups-dup-lite/
+/wp-content/upgrade/
+/wp-content/upgrade-temp-backup/
+
+# Cache & Temporary Files
+/wp-content/cache/
+/wp-content/litespeed/
+*.log
+error_log
+debug.log
+
+# Uploads (Usually too large)
+/wp-content/uploads/
+
+# Plugin & Theme Files (Keep custom ones, exclude common ones)
+/wp-content/plugins/akismet/
+/wp-content/plugins/hello.php
+/wp-content/themes/twenty*/
+
+# Advanced Cache
+/wp-content/advanced-cache.php
+/wp-content/advanced-headers.php
+/wp-content/.litespeed_conf.dat
+
+# Development Files
+node_modules/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Composer
+/vendor/
+
+# Keep Important Custom Files
+!/wp-content/plugins/financial-calculators/
+!/wp-content/themes/generatepress/
+!/wp-content/themes/twentytwentyfive/
