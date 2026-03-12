@@ -73,6 +73,89 @@ add_filter( 'excerpt_more', function () {
 } );
 
 /**
+ * Inject a search toggle button into the GeneratePress navigation bar.
+ * Renders after the primary nav items via the generate_inside_navigation hook.
+ */
+add_action( 'generate_inside_navigation', function () {
+    ?>
+    <div class="bp-nav-search" role="search">
+        <button
+            class="bp-nav-search__toggle"
+            aria-label="Toggle search"
+            aria-expanded="false"
+            aria-controls="bp-nav-search-form"
+            type="button"
+        >
+            <svg class="bp-nav-search__icon-open" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <svg class="bp-nav-search__icon-close" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+        </button>
+        <form
+            id="bp-nav-search-form"
+            class="bp-nav-search__form"
+            role="search"
+            method="get"
+            action="<?php echo esc_url( home_url( '/' ) ); ?>"
+            hidden
+        >
+            <label for="bp-nav-search-input" class="screen-reader-text">Search</label>
+            <input
+                id="bp-nav-search-input"
+                class="bp-nav-search__input"
+                type="search"
+                name="s"
+                placeholder="Search articles, topics…"
+                autocomplete="off"
+                aria-label="Search"
+            >
+            <button type="submit" class="bp-nav-search__submit" aria-label="Submit search">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                </svg>
+            </button>
+        </form>
+    </div>
+
+    <script>
+    (function () {
+        document.addEventListener('DOMContentLoaded', function () {
+            var btn   = document.querySelector('.bp-nav-search__toggle');
+            var form  = document.getElementById('bp-nav-search-form');
+            var input = document.getElementById('bp-nav-search-input');
+            if (!btn || !form) return;
+
+            btn.addEventListener('click', function () {
+                var isOpen = btn.getAttribute('aria-expanded') === 'true';
+                btn.setAttribute('aria-expanded', String(!isOpen));
+                form.hidden = isOpen;
+                btn.classList.toggle('is-open', !isOpen);
+                if (!isOpen && input) {
+                    setTimeout(function () { input.focus(); }, 50);
+                }
+            });
+
+            // Close on Escape
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && !form.hidden) {
+                    form.hidden = true;
+                    btn.setAttribute('aria-expanded', 'false');
+                    btn.classList.remove('is-open');
+                    btn.focus();
+                }
+            });
+        });
+    }());
+    </script>
+    <?php
+} );
+
+/**
  * Register widget areas specific to the child theme (newsletter sidebar, etc.)
  */
 add_action( 'widgets_init', function () {
