@@ -1,0 +1,47 @@
+name: Deploy to Hostinger
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: SSH deploy → Hostinger
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host:     ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key:      ${{ secrets.SSH_PRIVATE_KEY }}
+          port:     ${{ secrets.SSH_PORT }}
+          script: |
+            set -e
+
+            DEPLOY_PATH="$HOME/domains/bankopedia.co.in/public_html"
+
+            cd "$DEPLOY_PATH"
+
+            # If not yet a git repo, initialise and link to GitHub
+            if [ ! -d ".git" ]; then
+              echo "→ Initialising git repo..."
+              git init
+              git remote add origin https://github.com/prashant-fintech/wordpress-bankopedia.git
+              git fetch origin main
+              git reset --hard origin/main
+              echo "✓ Repository initialised."
+            else
+              echo "→ Pulling latest changes from main..."
+              git fetch origin main
+              git reset --hard origin/main
+              echo "✓ Pull complete."
+            fi
+
+            # Fix file permissions (WordPress standard)
+            find . -type d -not -path './.git/*' -exec chmod 755 {} \;
+            find . -type f -not -path './.git/*' -exec chmod 644 {} \;
+
+            echo "✓ Deployment finished."
