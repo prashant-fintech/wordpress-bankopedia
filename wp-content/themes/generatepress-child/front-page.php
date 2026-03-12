@@ -42,7 +42,7 @@ get_header();
             </p>
 
             <div class="bp-hero__actions">
-                <a href="<?php echo esc_url( home_url( '/calculators/emi-calculator/' ) ); ?>"
+                <a href="<?php echo esc_url( home_url( '/loan-calculator/' ) ); ?>"
                    class="bp-btn bp-btn--primary"
                    aria-label="Open EMI Calculator">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -120,7 +120,7 @@ get_header();
                         Calculate your monthly EMI, total interest payable, and see a
                         complete year-wise amortisation schedule for any loan.
                     </p>
-                    <a href="<?php echo esc_url( home_url( '/calculators/emi-calculator/' ) ); ?>"
+                    <a href="<?php echo esc_url( home_url( '/loan-calculator/' ) ); ?>"
                        class="bp-calc-card__link"
                        aria-label="Open EMI Calculator">
                         Calculate EMI
