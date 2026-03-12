@@ -181,42 +181,28 @@ get_header();
 
             <div class="bp-topics-grid">
 
-                <a href="<?php echo esc_url( home_url( '/category/rbi/' ) ); ?>" class="bp-topic-chip bp-topic-chip--blue">
-                    🏛️ RBI &amp; Monetary Policy
-                </a>
-                <a href="<?php echo esc_url( home_url( '/category/sebi/' ) ); ?>" class="bp-topic-chip bp-topic-chip--blue">
-                    📊 SEBI &amp; Markets
-                </a>
-                <a href="<?php echo esc_url( home_url( '/category/banking-basics/' ) ); ?>" class="bp-topic-chip bp-topic-chip--green">
-                    🏦 Banking Basics
-                </a>
-                <a href="<?php echo esc_url( home_url( '/category/loans/' ) ); ?>" class="bp-topic-chip bp-topic-chip--gold">
-                    💰 Loans &amp; EMI
-                </a>
-                <a href="<?php echo esc_url( home_url( '/category/investments/' ) ); ?>" class="bp-topic-chip bp-topic-chip--green">
-                    📈 Investments
-                </a>
-                <a href="<?php echo esc_url( home_url( '/category/personal-finance/' ) ); ?>" class="bp-topic-chip bp-topic-chip--purple">
-                    👤 Personal Finance
-                </a>
-                <a href="<?php echo esc_url( home_url( '/category/savings/' ) ); ?>" class="bp-topic-chip bp-topic-chip--gold">
-                    🏧 Savings &amp; FD
-                </a>
-                <a href="<?php echo esc_url( home_url( '/category/credit-cards/' ) ); ?>" class="bp-topic-chip bp-topic-chip--purple">
-                    💳 Credit Cards
-                </a>
-                <a href="<?php echo esc_url( home_url( '/category/insurance/' ) ); ?>" class="bp-topic-chip bp-topic-chip--green">
-                    🛡️ Insurance
-                </a>
-                <a href="<?php echo esc_url( home_url( '/category/tax/' ) ); ?>" class="bp-topic-chip bp-topic-chip--blue">
-                    🧾 Tax &amp; ITR
-                </a>
-                <a href="<?php echo esc_url( home_url( '/category/mutual-funds/' ) ); ?>" class="bp-topic-chip bp-topic-chip--gold">
-                    📂 Mutual Funds
-                </a>
-                <a href="<?php echo esc_url( home_url( '/category/stock-market/' ) ); ?>" class="bp-topic-chip bp-topic-chip--green">
-                    📉 Stock Market
-                </a>
+                <?php
+                $bp_topics = [
+                    [ 'label' => '🏛️ RBI &amp; Monetary Policy', 'q' => 'RBI',            'color' => 'blue'   ],
+                    [ 'label' => '📊 SEBI &amp; Markets',         'q' => 'SEBI',           'color' => 'blue'   ],
+                    [ 'label' => '🏦 Banking Basics',             'q' => 'banking',        'color' => 'green'  ],
+                    [ 'label' => '💰 Loans &amp; EMI',            'q' => 'loan EMI',       'color' => 'gold'   ],
+                    [ 'label' => '📈 Investments',                'q' => 'investment',     'color' => 'green'  ],
+                    [ 'label' => '👤 Personal Finance',           'q' => 'personal finance','color' => 'purple' ],
+                    [ 'label' => '🏧 Savings &amp; FD',           'q' => 'savings FD',     'color' => 'gold'   ],
+                    [ 'label' => '💳 Credit Cards',               'q' => 'credit card',    'color' => 'purple' ],
+                    [ 'label' => '🛡️ Insurance',                  'q' => 'insurance',      'color' => 'green'  ],
+                    [ 'label' => '🧾 Tax &amp; ITR',              'q' => 'tax ITR',        'color' => 'blue'   ],
+                    [ 'label' => '📂 Mutual Funds',               'q' => 'mutual fund',    'color' => 'gold'   ],
+                    [ 'label' => '📉 Stock Market',               'q' => 'stock market',   'color' => 'green'  ],
+                ];
+                foreach ( $bp_topics as $topic ) :
+                ?>
+                    <a href="<?php echo esc_url( home_url( '/?s=' . urlencode( $topic['q'] ) ) ); ?>"
+                       class="bp-topic-chip bp-topic-chip--<?php echo esc_attr( $topic['color'] ); ?>">
+                        <?php echo $topic['label']; ?>
+                    </a>
+                <?php endforeach; ?>
 
             </div><!-- .bp-topics-grid -->
 
